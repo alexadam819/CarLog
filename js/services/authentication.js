@@ -27,10 +27,11 @@ carLogApp.factory('Authentication', function($firebase,
 			},//LogOut
 			
 			register: function(user){
+				console.log("authentication factory register");
 				return auth.$createUser({
 					email: user.email,
 					password: user.password
-				}).then(function(regUesr){
+				}).then(function(regUser){
 					var ref = new Firebase(FIREBASE_URL + 'users/');
 					var firebaseUsers = $firebase(ref);
 					

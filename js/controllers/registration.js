@@ -10,7 +10,6 @@ carLogApp.controller('RegistrationController',
 		var auth = $firebaseAuth(ref);
 		
 		$scope.login = function(){
-			console.log($scope.user.email);
 			Authentication.login($scope.user)
 			.then(function(user) {
 				$location.path('garage');
@@ -19,9 +18,10 @@ carLogApp.controller('RegistrationController',
 			});
 		};//Login
 		
-		$scope.register = function(){
+		$scope.register = function(){			
+			console.log($scope.user.email);
 			Authentication.register($scope.user)
-			.function(function(user){
+			.then(function(user){
 				Authentication.login($scope.user);
 				$location.path('/garage');
 			}).catch(function(error){
