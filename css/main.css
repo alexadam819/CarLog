@@ -1,3 +1,11 @@
 .lowerHalf{
 	padding-top:15px;
 }
+
+.garageGrid{
+	font-size:14em;
+	padding-bottom: 75px;
+}
+footer{
+	display: none;
+}

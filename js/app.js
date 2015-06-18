@@ -24,12 +24,16 @@ var appControllers = angular.module('appControllers', ['firebase']);
 //		}).
 		when('/garage', {
 			templateUrl: 'views/garage.html',
-//			controller: 'MeetingsController',
+			controller: 'GarageController',
 //			resolve : {
 //				currentAuth : function(Authentication){
 //					return Authentication.requireAuth();
 //				}
 //			}  
+		}).
+		when('/garage/addcar', {
+			templateUrl: 'views/addcar.html',
+			controller: 'GarageController'
 		}).
 		otherwise({
 			redirectTo: '/'

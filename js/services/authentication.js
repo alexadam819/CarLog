@@ -22,10 +22,6 @@ carLogApp.factory('Authentication', function($firebase,
 				});//authWithPassword
 			},//Login
 			
-			logout: function(user){
-				return auth.$unauth();
-			},//LogOut
-			
 			register: function(user){
 				console.log("authentication factory register");
 				return auth.$createUser({

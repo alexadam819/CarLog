@@ -12,11 +12,12 @@ carLogApp.controller('RegistrationController',
 		$scope.login = function(){
 			Authentication.login($scope.user)
 			.then(function(user) {
-				$location.path('garage');
+				$location.path('/garage');
 			}).catch(function(error){
 				$scope.message = error.message;
 			});
 		};//Login
+		
 		
 		$scope.register = function(){			
 			console.log($scope.user.email);

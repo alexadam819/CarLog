@@ -1,0 +1,90 @@
+<div class="row">
+	<div class="col-lg-9 col-lg-offset-3">
+		<form name="addCarForm" class="form-horizontal"
+			ng-submit="addCarForm()"
+			novalidate>
+			<fieldset>
+			
+			<!-- Form Name -->
+			<legend>Add A Car</legend>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="make">Make</label>  
+			  <div class="col-md-6">
+			  <input id="make" name="make" type="text" placeholder="Make" class="form-control input-md"
+			  	ng-model="car.make" ng-required="true">
+			  <p class="formValidation" ng-show="addCarForm.make.$invalid && addCarForm.make.$touched">
+							Please specify the make of your car</p>  
+			  </div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="model">Model</label>  
+			  <div class="col-md-6">
+			  <input id="model" name="model" type="text" placeholder="Model" class="form-control input-md"
+			  	ng-model="car.model" ng-required="true">
+			  <p class="formValidation" ng-show="addCarForm.model.$invalid && addCarForm.model.$touched">
+							Please specify the model of your car</p>  
+			  </div>
+			  </div>
+			</div>
+			
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="year">Year</label>
+			  <div class="col-md-4">
+			    <select id="year" name="year" class="form-control">
+			      <option value="2015">2015</option>
+			      <option value="2014">2014</option>
+			      <option value="2013">2013</option>
+			      <option value="2012">2012</option>
+			      <option value="2011">2011</option>
+			      <option value="2010">2010</option>
+			    </select>
+			  </div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="ownershipDate">Ownership Date</label>  
+			  <div class="col-md-4">
+			  <input id="ownershipDate" name="ownershipDate" type="text" placeholder="Ownership Date" class="form-control input-md">
+			    
+			  </div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="vin">Vin</label>  
+			  <div class="col-md-6">
+			  <input id="vin" name="vin" type="text" placeholder="Vin" class="form-control input-md">
+			    
+			  </div>
+			</div>
+			
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="color">Color</label>
+			  <div class="col-md-4">
+			    <select id="color" name="color" class="form-control">
+			      <option value="Black">Black</option>
+			      <option value="White">White</option>
+			      <option value="Gray">Gray</option>
+			      <option value="Silver">Silver</option>
+			      <option value="Red">Red</option>
+			      <option value="Orange">Orange</option>
+			      <option value="Yellow">Yellow</option>
+			      <option value="Green">Green</option>
+			      <option value="Blue">Blue</option>
+			      <option value="Purple">Purple</option>
+			    </select>
+			  </div>
+			</div>
+			
+			</fieldset>
+			</form>
+
+	</div>
+</div>
