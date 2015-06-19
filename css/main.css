@@ -6,6 +6,11 @@
 	font-size:14em;
 	padding-bottom: 75px;
 }
+
+.formValidation{
+	color: red;
+}
+
 footer{
 	display: none;
 }
