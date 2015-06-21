@@ -39,3 +39,4 @@ var appControllers = angular.module('appControllers', ['firebase']);
 			redirectTo: '/'
 		});
 }]);
+
