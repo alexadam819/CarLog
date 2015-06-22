@@ -1,5 +1,5 @@
-$(function() {
-    $( "#ownershipDate" ).datepicker({
+$(document).ready(function () {
+    $("#ownershipDate").datepicker({
       changeMonth: true,
       changeYear: true
     });

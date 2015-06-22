@@ -14,3 +14,7 @@
 footer{
 	display: none;
 }
+
+.ui-datepicker-calendar {
+    display: none;
+}

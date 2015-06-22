@@ -7,10 +7,9 @@
 			
 			<!-- Form Name -->
 			<legend>Add A Car</legend>
-			
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="control-label" for="make">Make</label>  
+			  <label class="control-label" for="make">Make <span class="formValidation">*</span></label>  
 			  <input id="make" name="make" type="text" placeholder="Make" class="form-control input-md"
 			  	ng-model="car.make" ng-required="true">
 			  <p class="formValidation" ng-show="addCarForm.make.$invalid && addCarForm.make.$touched">
@@ -20,7 +19,7 @@
 			
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="control-label" for="model">Model</label>  
+			  <label class="control-label" for="model">Model <span class="formValidation">*</span></label>  
 			  <input id="model" name="model" type="text" placeholder="Model" class="form-control input-md"
 			  	ng-model="car.model" ng-required="true">
 			  <p class="formValidation" ng-show="addCarForm.model.$invalid && addCarForm.model.$touched">
@@ -29,7 +28,7 @@
 			
 			<!-- Select Basic -->
 			<div class="form-group">
-			  <label class="control-label" for="year">Year</label>
+			  <label class="control-label" for="year">Year <span class="formValidation">*</span></label>
 			    <select id="year" name="year" class="form-control"
 					ng-model="car.year" ng-required="true">
 			      <option value="2015">2015</option>
@@ -45,8 +44,8 @@
 			
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="control-label" for="ownershipDate">Ownership Date</label>
-			  <input id="ownershipDate" name="ownershipDate" type="text" placeholder="Ownership Date" class="form-control input-md"
+			  <label class="control-label" for="ownershipDate">Ownership Date <span class="formValidation">*</span></label>
+			  <input id="ownershipDate" name="ownershipDate" type="text" class="form-control datepicker"
 			  	ng-model="car.ownershipDate" ng-required="true">
 				<p class="formValidation" ng-show="addCarForm.ownershipDate.$invalid && addCarForm.ownershipDate.$touched">
 							Please specify the date you purchased your car</p>
@@ -61,7 +60,7 @@
 			
 			<!-- Select Basic -->
 			<div class="form-group">
-			  <label class="control-label" for="color">Color</label>
+			  <label class="control-label" for="color">Color <span class="formValidation">*</span></label>
 			    <select id="color" name="color" class="form-control"
 					ng-model="car.color">
 			      <option value="Black">Black</option>
@@ -80,7 +79,7 @@
 			
 			<div class="form-group">
 				<button type="submit" class="btn btn-success" ng-disabled="addCarForm.$invalid">Add My Car</button>
-				<button type="submit" class="btn btn-link" ng-href="#/garage">Nevermind, take me back to the garage.</button>
+				<a class="btn btn-link" ng-href="#/garage">Nevermind, take me back to the garage.</a>
 			</div>
 			
 			</fieldset>
